@@ -1,0 +1,210 @@
+/* Site Wide */
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0 20px 0 20px;
+}
+
+/* Header */
+
+header {
+    border-bottom: 2px solid darkgray;
+}
+
+/* Footer */
+
+footer {
+    clear: both;
+}
+
+footer p {
+    clear: both;
+    font-size: 0.6em;
+    text-align: center;
+}
+
+/* Nav */
+
+nav ul {
+    list-style-type: none;
+    margin-top: 8px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+    border-radius: 10px;
+}
+
+nav li {
+    float: left;
+}
+
+nav li.activePage {
+    background-color: #222222;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: color 0.4s;
+}
+
+nav li a:hover {
+    color: #999999;
+}
+
+@media only screen and (orientation: portrait) {
+    nav li {
+        float: none;
+    }
+}
+
+/* About */
+
+/* Gallery  */
+
+body#gallery figure {
+    border: 1px solid black;
+    float: left;
+    width: 320px;
+    height: 240px;
+    margin: 16px 70px;
+}
+
+body#gallery figure img {
+    width: 320px;
+    height: 240px;
+}
+
+@media screen and (max-width: 1502px) {
+    body#gallery figure {
+        margin: 16px 10px;
+    }
+}
+
+@media only screen and (orientation: portrait) {
+    body#gallery figure {
+        float: none;
+        margin: 16px auto;
+        width: 320px;
+        height: 240px;
+    }
+    
+    body#gallery figure img {
+        width: 320px;
+        height: 240px;
+    }
+}
+
+/* Form */
+
+fieldset {
+    border: 2px solid darkgray;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+fieldset.buttons {
+    border: none;
+}
+
+input.button {
+    border: none;
+    border-radius: 10px;
+    background-color: darkgray;
+    box-shadow: 2px 2px 2px lightgray;
+    padding: 0.4em;
+}
+
+input.button:hover {
+    cursor: pointer;
+}
+
+input.button:focus {
+    outline: 0;
+}
+
+fieldset.text input {
+    border: 2px solid darkgray;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px lightgray;
+    display: block;
+    padding: 0.6em;
+}
+
+fieldset.text input:focus {
+    border: 2px solid #333333;
+    outline: 0;
+}
+
+fieldset.text label {
+    display: block;
+    padding: 0 0 0.5em 0;
+}
+
+@media only screen and (orientation: portrait) {
+    fieldset.listbox select {
+        width: 100%;
+    }
+}
+
+fieldset.listbox legend {
+    padding-bottom: 0.5em;
+}
+
+select {
+    outline: 0;
+}
+
+.mistake {
+    background-color: #FF6666;
+}
+
+.mistake legend {
+    float: left;
+}
+
+.mistake p {
+    clear: both;
+}
+
+#errors ol li {
+    color: #ff5555;
+}
+
+/* Past Winners */
+
+body#past-winners table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+body#past-winners th, td {
+    padding: 5px;
+}
+
+body#past-winners table th {
+    text-align: left;
+    background-color: #999999;
+}
+
+body#past-winners table tr:nth-child(even) {
+    background-color: #eee;
+}
+
+body#past-winners table tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+/* Who We Support */
+
+body#who-we-support img {
+    float: right;
+    width: 154px;
+    height: 200px;
+    margin-left: 20px;
+}
